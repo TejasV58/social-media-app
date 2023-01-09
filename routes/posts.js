@@ -18,7 +18,7 @@ router.post('/api/posts', auth, async (req,res) => {
         delete postObject.createdBy
         delete postObject.updatedAt
 
-        res.send(postObject)
+        res.status(201).send(postObject)
 
     } catch(e) {
         res.status(400).send({ error: e })
