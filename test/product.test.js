@@ -446,5 +446,5 @@ describe('Posts Realted Tests', () => {
             })
     })
 
-})
+});
 
